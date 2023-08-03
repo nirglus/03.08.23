@@ -1,0 +1,18 @@
+body{
+    margin:0;
+}
+.container{
+    display:grid;
+}
+.header{
+    background-color: brown;
+}
+.main{
+    background-color: chocolate;
+}
+.sidebar{
+    background-color: cornflowerblue;
+}
+.footer{
+    background-color: yellow;
+}
