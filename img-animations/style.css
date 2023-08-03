@@ -2,21 +2,20 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: stretch;
+    overflow: hidden;
 }
 .slider img{
     width: 32vw;
     position:absolute;
     animation-name: openImgs;
-    animation-duration: 3s;
+    animation-duration: 4s;
     animation-delay: 3s;
-
 }
-
-
 @keyframes openImgs{
     from{position: absolute}
     to{position:inherit}
 }
+
 
 @media screen and (max-width: 600px){
     .slider{
