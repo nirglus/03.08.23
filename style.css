@@ -1,0 +1,40 @@
+.slider{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: stretch;
+}
+.slider img{
+    width: 32vw;
+    position:absolute;
+    animation-name: openImgs;
+    animation-duration: 3s;
+    animation-delay: 3s;
+
+}
+
+
+@keyframes openImgs{
+    from{position: absolute}
+    to{position:inherit}
+}
+
+@media screen and (max-width: 600px){
+    .slider{
+        flex-direction: column;
+    }
+}
+.img1:hover{
+    filter: blur(3px);
+}
+.img2:hover{
+    filter: sepia(75%);
+}
+.img3:hover{
+    filter: brightness(150%);
+}
+.img4:hover{
+    filter: saturate(5);
+}
+.img5:hover{
+    filter:hue-rotate(60deg);
+}
