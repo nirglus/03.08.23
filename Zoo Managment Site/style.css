@@ -28,7 +28,7 @@ body{
     align-items: center;
     gap: 10%;
 }
-.header li{
+li{
     list-style: none;
 }
 a{
@@ -37,6 +37,15 @@ a{
 }
 a:hover{
     color:rgb(114, 82, 37) ;
+}
+.sidebar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sidebar ul{
+    display: flex;
+    flex-direction: column-reverse;
 }
 .main{
     background-color: rgb(114, 82, 37);
