@@ -72,6 +72,15 @@ img{
     height:15vh;
     width: 14vw;
 }
+.capy:hover{
+    filter: blur(2px);
+}
+.croc:hover{
+    filter: sepia(20%);
+}
+.peng:hover{
+    filter: brightness(150%);
+}
 .sidebar{
     background-color: rgb(147, 117, 76);
     grid-area: sidebar;
