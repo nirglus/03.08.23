@@ -29,3 +29,16 @@ body{
     background-color: yellow;
     grid-area:footer;
 }
+@media only screen and (max-width: 600px){
+    .container{
+        grid-template-areas: 
+          "header header header header"
+          "main main main main"
+          "main main main main"
+          "main main main main"
+          "footer footer footer footer";
+    }
+    .sidebar{
+        display:none;
+    }
+}
