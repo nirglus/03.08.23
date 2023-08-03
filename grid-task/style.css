@@ -3,16 +3,29 @@ body{
 }
 .container{
     display:grid;
+    height:100vh;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-areas: 
+      "header header header header"
+      "sidebar main main main"
+      "sidebar main main main"
+      "sidebar main main main"
+      "footer footer footer footer";
 }
 .header{
     background-color: brown;
+    grid-area: header;
 }
 .main{
     background-color: chocolate;
+    grid-area: main;
 }
 .sidebar{
     background-color: cornflowerblue;
+    grid-area: sidebar;
 }
 .footer{
     background-color: yellow;
+    grid-area:footer;
 }
