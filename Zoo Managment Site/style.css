@@ -4,6 +4,7 @@ body{
 .container{
     display:grid;
     height:100vh;
+    width: 100vw;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 20% 20% 20% 20% 20%;
     grid-template-areas: 
@@ -16,6 +17,26 @@ body{
 .header{
     background-color: rgb(42, 166, 37);
     grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+.header li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+a:hover{
+    color:rgb(114, 82, 37) ;
 }
 .main{
     background-color: rgb(114, 82, 37);
@@ -29,6 +50,7 @@ body{
     background-color: rgb(42, 166, 37);
     grid-area:footer;
 }
+
 @media only screen and (max-width: 600px){
     .container{
         grid-template-areas: 
